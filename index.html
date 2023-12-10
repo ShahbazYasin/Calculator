@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styel.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <div>
+            <input type="number" placeholder="0" id="value1">
+            <input type="number" placeholder="0" id="value2">
+            <input type="number" placeholder="0" id="inputResult">
+            
+        </div>
+        <div>
+            <button onclick="allClear('ac')">AC</button>
+            <button onclick="oneDigitClear('del')">DEL</button>
+            <button onclick="actionToInput('%')">%</button>
+            <button onclick="addToInput('/')">/</button>
+        </div>
+
+        <div>
+            <button onclick="addToInput('7')">7</button>
+            <button onclick="addToInput('8')">8</button>
+            <button onclick="addToInput('9')">9</button>
+            <button onclick="addToInput('x')">x</button>
+        </div>
+
+        <div>
+            <button onclick="addToInput('4')">4</button>
+            <button onclick="addToInput('5')">5</button>
+            <button onclick="addToInput('6')">6</button>
+            <button onclick="addToInput('-')">-</button>
+        </div>
+
+        <div>
+            <button onclick="addToInput('1')">1</button>
+            <button onclick="addToInput('2')">2</button>
+            <button onclick="addToInput('3')">3</button>
+            <button onclick="addToInput('+')">+</button>
+        </div>
+
+        <div>
+            <button onclick="addToInput('00')">00</button>
+            <button onclick="addToInput('0')">0</button>
+            <button onclick="addToInput('.')">.</button>
+            <button class="btn-color" onclick="showResult()">=</button>
+        </div>
+    
+    </div>
+
+
+
+
+    <script src="./function.js"></script>
+</body>
+</html>
